@@ -1,0 +1,2898 @@
+{
+  "dataStats": {
+    "counties": 263,
+    "yearsCovered": 20,
+    "trainingRows": 20536,
+    "features": 35,
+    "modelR2": 0.789,
+    "modelMAE": 12.5,
+    "statesCount": 5
+  },
+  "modelPerformance": [
+    {
+      "model": "Baseline\n(State+Year)",
+      "r2": 0.271,
+      "mae": 18.4
+    },
+    {
+      "model": "RF No Lag\n(v1)",
+      "r2": 0.514,
+      "mae": 15.95
+    },
+    {
+      "model": "XGBoost\n+All Features(v8)",
+      "r2": 0.789,
+      "mae": 12.5
+    }
+  ],
+  "featureImportance": [
+    {
+      "feature": "County Mean Yield (Lag)",
+      "importance": 27.1,
+      "category": "Lag"
+    },
+    {
+      "feature": "NDVI Peak Season",
+      "importance": 10.8,
+      "category": "Satellite"
+    },
+    {
+      "feature": "Drought Severity (D3 %)",
+      "importance": 5.2,
+      "category": "Climate"
+    },
+    {
+      "feature": "VPD Vegetative Stage",
+      "importance": 4.6,
+      "category": "Climate"
+    },
+    {
+      "feature": "HLS NDVI (Sep 1)",
+      "importance": 3.9,
+      "category": "Satellite"
+    },
+    {
+      "feature": "NDVI at Silking",
+      "importance": 3.8,
+      "category": "Satellite"
+    },
+    {
+      "feature": "state_code",
+      "importance": 3.6,
+      "category": "Lag"
+    },
+    {
+      "feature": "d2_pct",
+      "importance": 3.3,
+      "category": "Climate"
+    },
+    {
+      "feature": "year_norm",
+      "importance": 3.2,
+      "category": "Lag"
+    },
+    {
+      "feature": "d2plus",
+      "importance": 2.9,
+      "category": "Climate"
+    },
+    {
+      "feature": "evi_mean_final",
+      "importance": 2.9,
+      "category": "Satellite"
+    },
+    {
+      "feature": "Prior Year Yield",
+      "importance": 2.5,
+      "category": "Lag"
+    }
+  ],
+  "predictions2025": [
+    {
+      "county": "Adams, CO",
+      "fips": "08001",
+      "state": "Colorado",
+      "predicted": 69,
+      "ci_low": 56,
+      "ci_high": 81,
+      "trend": "up"
+    },
+    {
+      "county": "Bent, CO",
+      "fips": "08011",
+      "state": "Colorado",
+      "predicted": 180,
+      "ci_low": 168,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Cheyenne, CO",
+      "fips": "08017",
+      "state": "Colorado",
+      "predicted": 77,
+      "ci_low": 64,
+      "ci_high": 89,
+      "trend": "up"
+    },
+    {
+      "county": "Delta, CO",
+      "fips": "08029",
+      "state": "Colorado",
+      "predicted": 206,
+      "ci_low": 193,
+      "ci_high": 218,
+      "trend": "up"
+    },
+    {
+      "county": "Kit Carson, CO",
+      "fips": "08063",
+      "state": "Colorado",
+      "predicted": 111,
+      "ci_low": 98,
+      "ci_high": 124,
+      "trend": "up"
+    },
+    {
+      "county": "Larimer, CO",
+      "fips": "08069",
+      "state": "Colorado",
+      "predicted": 157,
+      "ci_low": 145,
+      "ci_high": 170,
+      "trend": "up"
+    },
+    {
+      "county": "Lincoln, CO",
+      "fips": "08073",
+      "state": "Colorado",
+      "predicted": 66,
+      "ci_low": 53,
+      "ci_high": 78,
+      "trend": "up"
+    },
+    {
+      "county": "Logan, CO",
+      "fips": "08075",
+      "state": "Colorado",
+      "predicted": 154,
+      "ci_low": 142,
+      "ci_high": 167,
+      "trend": "up"
+    },
+    {
+      "county": "Mesa, CO",
+      "fips": "08077",
+      "state": "Colorado",
+      "predicted": 194,
+      "ci_low": 181,
+      "ci_high": 206,
+      "trend": "stable"
+    },
+    {
+      "county": "Montezuma, CO",
+      "fips": "08083",
+      "state": "Colorado",
+      "predicted": 81,
+      "ci_low": 68,
+      "ci_high": 93,
+      "trend": "up"
+    },
+    {
+      "county": "Montrose, CO",
+      "fips": "08085",
+      "state": "Colorado",
+      "predicted": 183,
+      "ci_low": 171,
+      "ci_high": 196,
+      "trend": "stable"
+    },
+    {
+      "county": "Morgan, CO",
+      "fips": "08087",
+      "state": "Colorado",
+      "predicted": 177,
+      "ci_low": 164,
+      "ci_high": 190,
+      "trend": "stable"
+    },
+    {
+      "county": "Otero, CO",
+      "fips": "08089",
+      "state": "Colorado",
+      "predicted": 194,
+      "ci_low": 181,
+      "ci_high": 206,
+      "trend": "up"
+    },
+    {
+      "county": "Phillips, CO",
+      "fips": "08095",
+      "state": "Colorado",
+      "predicted": 144,
+      "ci_low": 132,
+      "ci_high": 157,
+      "trend": "up"
+    },
+    {
+      "county": "Prowers, CO",
+      "fips": "08099",
+      "state": "Colorado",
+      "predicted": 166,
+      "ci_low": 154,
+      "ci_high": 179,
+      "trend": "stable"
+    },
+    {
+      "county": "Washington, CO",
+      "fips": "08121",
+      "state": "Colorado",
+      "predicted": 88,
+      "ci_low": 76,
+      "ci_high": 101,
+      "trend": "up"
+    },
+    {
+      "county": "Weld, CO",
+      "fips": "08123",
+      "state": "Colorado",
+      "predicted": 180,
+      "ci_low": 168,
+      "ci_high": 192,
+      "trend": "stable"
+    },
+    {
+      "county": "Yuma, CO",
+      "fips": "08125",
+      "state": "Colorado",
+      "predicted": 197,
+      "ci_low": 185,
+      "ci_high": 210,
+      "trend": "up"
+    },
+    {
+      "county": "Adair, IA",
+      "fips": "19001",
+      "state": "Iowa",
+      "predicted": 171,
+      "ci_low": 159,
+      "ci_high": 184,
+      "trend": "stable"
+    },
+    {
+      "county": "Allamakee, IA",
+      "fips": "19005",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Audubon, IA",
+      "fips": "19009",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 175,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Benton, IA",
+      "fips": "19011",
+      "state": "Iowa",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Black Hawk, IA",
+      "fips": "19013",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Boone, IA",
+      "fips": "19015",
+      "state": "Iowa",
+      "predicted": 181,
+      "ci_low": 169,
+      "ci_high": 194,
+      "trend": "stable"
+    },
+    {
+      "county": "Bremer, IA",
+      "fips": "19017",
+      "state": "Iowa",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Buchanan, IA",
+      "fips": "19019",
+      "state": "Iowa",
+      "predicted": 191,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Butler, IA",
+      "fips": "19023",
+      "state": "Iowa",
+      "predicted": 191,
+      "ci_low": 178,
+      "ci_high": 203,
+      "trend": "stable"
+    },
+    {
+      "county": "Calhoun, IA",
+      "fips": "19025",
+      "state": "Iowa",
+      "predicted": 184,
+      "ci_low": 172,
+      "ci_high": 197,
+      "trend": "stable"
+    },
+    {
+      "county": "Carroll, IA",
+      "fips": "19027",
+      "state": "Iowa",
+      "predicted": 192,
+      "ci_low": 180,
+      "ci_high": 205,
+      "trend": "stable"
+    },
+    {
+      "county": "Cass, IA",
+      "fips": "19029",
+      "state": "Iowa",
+      "predicted": 185,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Cedar, IA",
+      "fips": "19031",
+      "state": "Iowa",
+      "predicted": 192,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Cerro Gordo, IA",
+      "fips": "19033",
+      "state": "Iowa",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Cherokee, IA",
+      "fips": "19035",
+      "state": "Iowa",
+      "predicted": 192,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Chickasaw, IA",
+      "fips": "19037",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Clarke, IA",
+      "fips": "19039",
+      "state": "Iowa",
+      "predicted": 143,
+      "ci_low": 130,
+      "ci_high": 155,
+      "trend": "stable"
+    },
+    {
+      "county": "Clay, IA",
+      "fips": "19041",
+      "state": "Iowa",
+      "predicted": 180,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Clayton, IA",
+      "fips": "19043",
+      "state": "Iowa",
+      "predicted": 194,
+      "ci_low": 182,
+      "ci_high": 207,
+      "trend": "stable"
+    },
+    {
+      "county": "Clinton, IA",
+      "fips": "19045",
+      "state": "Iowa",
+      "predicted": 194,
+      "ci_low": 181,
+      "ci_high": 206,
+      "trend": "stable"
+    },
+    {
+      "county": "Crawford, IA",
+      "fips": "19047",
+      "state": "Iowa",
+      "predicted": 195,
+      "ci_low": 182,
+      "ci_high": 207,
+      "trend": "stable"
+    },
+    {
+      "county": "Davis, IA",
+      "fips": "19051",
+      "state": "Iowa",
+      "predicted": 153,
+      "ci_low": 141,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "Decatur, IA",
+      "fips": "19053",
+      "state": "Iowa",
+      "predicted": 157,
+      "ci_low": 145,
+      "ci_high": 170,
+      "trend": "stable"
+    },
+    {
+      "county": "Delaware, IA",
+      "fips": "19055",
+      "state": "Iowa",
+      "predicted": 193,
+      "ci_low": 181,
+      "ci_high": 206,
+      "trend": "stable"
+    },
+    {
+      "county": "Des Moines, IA",
+      "fips": "19057",
+      "state": "Iowa",
+      "predicted": 183,
+      "ci_low": 171,
+      "ci_high": 196,
+      "trend": "stable"
+    },
+    {
+      "county": "Dickinson, IA",
+      "fips": "19059",
+      "state": "Iowa",
+      "predicted": 176,
+      "ci_low": 164,
+      "ci_high": 189,
+      "trend": "up"
+    },
+    {
+      "county": "Dubuque, IA",
+      "fips": "19061",
+      "state": "Iowa",
+      "predicted": 195,
+      "ci_low": 182,
+      "ci_high": 207,
+      "trend": "stable"
+    },
+    {
+      "county": "Fayette, IA",
+      "fips": "19065",
+      "state": "Iowa",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Floyd, IA",
+      "fips": "19067",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Franklin, IA",
+      "fips": "19069",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 175,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Fremont, IA",
+      "fips": "19071",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 174,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Greene, IA",
+      "fips": "19073",
+      "state": "Iowa",
+      "predicted": 185,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Hamilton, IA",
+      "fips": "19079",
+      "state": "Iowa",
+      "predicted": 180,
+      "ci_low": 168,
+      "ci_high": 193,
+      "trend": "stable"
+    },
+    {
+      "county": "Hancock, IA",
+      "fips": "19081",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 175,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Henry, IA",
+      "fips": "19087",
+      "state": "Iowa",
+      "predicted": 177,
+      "ci_low": 165,
+      "ci_high": 190,
+      "trend": "stable"
+    },
+    {
+      "county": "Howard, IA",
+      "fips": "19089",
+      "state": "Iowa",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Humboldt, IA",
+      "fips": "19091",
+      "state": "Iowa",
+      "predicted": 185,
+      "ci_low": 172,
+      "ci_high": 197,
+      "trend": "stable"
+    },
+    {
+      "county": "Ida, IA",
+      "fips": "19093",
+      "state": "Iowa",
+      "predicted": 197,
+      "ci_low": 184,
+      "ci_high": 210,
+      "trend": "stable"
+    },
+    {
+      "county": "Iowa, IA",
+      "fips": "19095",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 178,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Jackson, IA",
+      "fips": "19097",
+      "state": "Iowa",
+      "predicted": 192,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Jefferson, IA",
+      "fips": "19101",
+      "state": "Iowa",
+      "predicted": 169,
+      "ci_low": 157,
+      "ci_high": 182,
+      "trend": "stable"
+    },
+    {
+      "county": "Johnson, IA",
+      "fips": "19103",
+      "state": "Iowa",
+      "predicted": 185,
+      "ci_low": 172,
+      "ci_high": 197,
+      "trend": "stable"
+    },
+    {
+      "county": "Jones, IA",
+      "fips": "19105",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 178,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Lee, IA",
+      "fips": "19111",
+      "state": "Iowa",
+      "predicted": 174,
+      "ci_low": 161,
+      "ci_high": 186,
+      "trend": "stable"
+    },
+    {
+      "county": "Linn, IA",
+      "fips": "19113",
+      "state": "Iowa",
+      "predicted": 191,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Louisa, IA",
+      "fips": "19115",
+      "state": "Iowa",
+      "predicted": 183,
+      "ci_low": 170,
+      "ci_high": 195,
+      "trend": "stable"
+    },
+    {
+      "county": "Lyon, IA",
+      "fips": "19119",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Mahaska, IA",
+      "fips": "19123",
+      "state": "Iowa",
+      "predicted": 184,
+      "ci_low": 171,
+      "ci_high": 196,
+      "trend": "stable"
+    },
+    {
+      "county": "Marion, IA",
+      "fips": "19125",
+      "state": "Iowa",
+      "predicted": 179,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "stable"
+    },
+    {
+      "county": "Marshall, IA",
+      "fips": "19127",
+      "state": "Iowa",
+      "predicted": 192,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Mills, IA",
+      "fips": "19129",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Mitchell, IA",
+      "fips": "19131",
+      "state": "Iowa",
+      "predicted": 193,
+      "ci_low": 180,
+      "ci_high": 205,
+      "trend": "stable"
+    },
+    {
+      "county": "Monona, IA",
+      "fips": "19133",
+      "state": "Iowa",
+      "predicted": 175,
+      "ci_low": 163,
+      "ci_high": 188,
+      "trend": "stable"
+    },
+    {
+      "county": "Monroe, IA",
+      "fips": "19135",
+      "state": "Iowa",
+      "predicted": 154,
+      "ci_low": 141,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "Montgomery, IA",
+      "fips": "19137",
+      "state": "Iowa",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Muscatine, IA",
+      "fips": "19139",
+      "state": "Iowa",
+      "predicted": 184,
+      "ci_low": 172,
+      "ci_high": 197,
+      "trend": "stable"
+    },
+    {
+      "county": "O Brien, IA",
+      "fips": "19141",
+      "state": "Iowa",
+      "predicted": 194,
+      "ci_low": 181,
+      "ci_high": 206,
+      "trend": "stable"
+    },
+    {
+      "county": "Page, IA",
+      "fips": "19145",
+      "state": "Iowa",
+      "predicted": 178,
+      "ci_low": 165,
+      "ci_high": 190,
+      "trend": "stable"
+    },
+    {
+      "county": "Palo Alto, IA",
+      "fips": "19147",
+      "state": "Iowa",
+      "predicted": 179,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "stable"
+    },
+    {
+      "county": "Plymouth, IA",
+      "fips": "19149",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Pocahontas, IA",
+      "fips": "19151",
+      "state": "Iowa",
+      "predicted": 185,
+      "ci_low": 172,
+      "ci_high": 197,
+      "trend": "stable"
+    },
+    {
+      "county": "Polk, IA",
+      "fips": "19153",
+      "state": "Iowa",
+      "predicted": 182,
+      "ci_low": 170,
+      "ci_high": 195,
+      "trend": "stable"
+    },
+    {
+      "county": "Poweshiek, IA",
+      "fips": "19157",
+      "state": "Iowa",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Sac, IA",
+      "fips": "19161",
+      "state": "Iowa",
+      "predicted": 189,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Scott, IA",
+      "fips": "19163",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 178,
+      "ci_high": 203,
+      "trend": "stable"
+    },
+    {
+      "county": "Story, IA",
+      "fips": "19169",
+      "state": "Iowa",
+      "predicted": 181,
+      "ci_low": 169,
+      "ci_high": 194,
+      "trend": "stable"
+    },
+    {
+      "county": "Taylor, IA",
+      "fips": "19173",
+      "state": "Iowa",
+      "predicted": 165,
+      "ci_low": 152,
+      "ci_high": 178,
+      "trend": "stable"
+    },
+    {
+      "county": "Wayne, IA",
+      "fips": "19185",
+      "state": "Iowa",
+      "predicted": 160,
+      "ci_low": 147,
+      "ci_high": 172,
+      "trend": "stable"
+    },
+    {
+      "county": "Webster, IA",
+      "fips": "19187",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Winnebago, IA",
+      "fips": "19189",
+      "state": "Iowa",
+      "predicted": 187,
+      "ci_low": 175,
+      "ci_high": 200,
+      "trend": "up"
+    },
+    {
+      "county": "Winneshiek, IA",
+      "fips": "19191",
+      "state": "Iowa",
+      "predicted": 190,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Woodbury, IA",
+      "fips": "19193",
+      "state": "Iowa",
+      "predicted": 191,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Worth, IA",
+      "fips": "19195",
+      "state": "Iowa",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Atchison, MO",
+      "fips": "29005",
+      "state": "Missouri",
+      "predicted": 183,
+      "ci_low": 171,
+      "ci_high": 196,
+      "trend": "stable"
+    },
+    {
+      "county": "Audrain, MO",
+      "fips": "29007",
+      "state": "Missouri",
+      "predicted": 164,
+      "ci_low": 151,
+      "ci_high": 176,
+      "trend": "stable"
+    },
+    {
+      "county": "Barry, MO",
+      "fips": "29009",
+      "state": "Missouri",
+      "predicted": 148,
+      "ci_low": 135,
+      "ci_high": 160,
+      "trend": "up"
+    },
+    {
+      "county": "Barton, MO",
+      "fips": "29011",
+      "state": "Missouri",
+      "predicted": 141,
+      "ci_low": 129,
+      "ci_high": 154,
+      "trend": "stable"
+    },
+    {
+      "county": "Boone, MO",
+      "fips": "29019",
+      "state": "Missouri",
+      "predicted": 154,
+      "ci_low": 142,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "Buchanan, MO",
+      "fips": "29021",
+      "state": "Missouri",
+      "predicted": 168,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "stable"
+    },
+    {
+      "county": "Caldwell, MO",
+      "fips": "29025",
+      "state": "Missouri",
+      "predicted": 152,
+      "ci_low": 140,
+      "ci_high": 164,
+      "trend": "stable"
+    },
+    {
+      "county": "Callaway, MO",
+      "fips": "29027",
+      "state": "Missouri",
+      "predicted": 161,
+      "ci_low": 149,
+      "ci_high": 174,
+      "trend": "stable"
+    },
+    {
+      "county": "Cape Girardeau, MO",
+      "fips": "29031",
+      "state": "Missouri",
+      "predicted": 163,
+      "ci_low": 150,
+      "ci_high": 175,
+      "trend": "stable"
+    },
+    {
+      "county": "Carroll, MO",
+      "fips": "29033",
+      "state": "Missouri",
+      "predicted": 165,
+      "ci_low": 153,
+      "ci_high": 178,
+      "trend": "stable"
+    },
+    {
+      "county": "Cass, MO",
+      "fips": "29037",
+      "state": "Missouri",
+      "predicted": 144,
+      "ci_low": 131,
+      "ci_high": 156,
+      "trend": "stable"
+    },
+    {
+      "county": "Cedar, MO",
+      "fips": "29039",
+      "state": "Missouri",
+      "predicted": 134,
+      "ci_low": 122,
+      "ci_high": 147,
+      "trend": "stable"
+    },
+    {
+      "county": "Clay, MO",
+      "fips": "29047",
+      "state": "Missouri",
+      "predicted": 168,
+      "ci_low": 156,
+      "ci_high": 181,
+      "trend": "stable"
+    },
+    {
+      "county": "Clinton, MO",
+      "fips": "29049",
+      "state": "Missouri",
+      "predicted": 166,
+      "ci_low": 154,
+      "ci_high": 178,
+      "trend": "stable"
+    },
+    {
+      "county": "Cole, MO",
+      "fips": "29051",
+      "state": "Missouri",
+      "predicted": 155,
+      "ci_low": 143,
+      "ci_high": 168,
+      "trend": "stable"
+    },
+    {
+      "county": "Dade, MO",
+      "fips": "29057",
+      "state": "Missouri",
+      "predicted": 135,
+      "ci_low": 122,
+      "ci_high": 147,
+      "trend": "up"
+    },
+    {
+      "county": "Daviess, MO",
+      "fips": "29061",
+      "state": "Missouri",
+      "predicted": 155,
+      "ci_low": 142,
+      "ci_high": 168,
+      "trend": "stable"
+    },
+    {
+      "county": "Dunklin, MO",
+      "fips": "29069",
+      "state": "Missouri",
+      "predicted": 180,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Franklin, MO",
+      "fips": "29071",
+      "state": "Missouri",
+      "predicted": 151,
+      "ci_low": 139,
+      "ci_high": 164,
+      "trend": "stable"
+    },
+    {
+      "county": "Grundy, MO",
+      "fips": "29079",
+      "state": "Missouri",
+      "predicted": 149,
+      "ci_low": 137,
+      "ci_high": 162,
+      "trend": "stable"
+    },
+    {
+      "county": "Harrison, MO",
+      "fips": "29081",
+      "state": "Missouri",
+      "predicted": 148,
+      "ci_low": 136,
+      "ci_high": 161,
+      "trend": "stable"
+    },
+    {
+      "county": "Jackson, MO",
+      "fips": "29095",
+      "state": "Missouri",
+      "predicted": 166,
+      "ci_low": 154,
+      "ci_high": 179,
+      "trend": "up"
+    },
+    {
+      "county": "Johnson, MO",
+      "fips": "29101",
+      "state": "Missouri",
+      "predicted": 148,
+      "ci_low": 135,
+      "ci_high": 160,
+      "trend": "stable"
+    },
+    {
+      "county": "Lafayette, MO",
+      "fips": "29107",
+      "state": "Missouri",
+      "predicted": 175,
+      "ci_low": 163,
+      "ci_high": 188,
+      "trend": "stable"
+    },
+    {
+      "county": "Lawrence, MO",
+      "fips": "29109",
+      "state": "Missouri",
+      "predicted": 140,
+      "ci_low": 128,
+      "ci_high": 152,
+      "trend": "up"
+    },
+    {
+      "county": "Lewis, MO",
+      "fips": "29111",
+      "state": "Missouri",
+      "predicted": 155,
+      "ci_low": 142,
+      "ci_high": 167,
+      "trend": "stable"
+    },
+    {
+      "county": "Lincoln, MO",
+      "fips": "29113",
+      "state": "Missouri",
+      "predicted": 151,
+      "ci_low": 138,
+      "ci_high": 163,
+      "trend": "stable"
+    },
+    {
+      "county": "Livingston, MO",
+      "fips": "29117",
+      "state": "Missouri",
+      "predicted": 157,
+      "ci_low": 144,
+      "ci_high": 170,
+      "trend": "stable"
+    },
+    {
+      "county": "Macon, MO",
+      "fips": "29121",
+      "state": "Missouri",
+      "predicted": 151,
+      "ci_low": 138,
+      "ci_high": 163,
+      "trend": "stable"
+    },
+    {
+      "county": "Maries, MO",
+      "fips": "29125",
+      "state": "Missouri",
+      "predicted": 136,
+      "ci_low": 124,
+      "ci_high": 148,
+      "trend": "up"
+    },
+    {
+      "county": "Marion, MO",
+      "fips": "29127",
+      "state": "Missouri",
+      "predicted": 174,
+      "ci_low": 162,
+      "ci_high": 187,
+      "trend": "stable"
+    },
+    {
+      "county": "Miller, MO",
+      "fips": "29131",
+      "state": "Missouri",
+      "predicted": 143,
+      "ci_low": 131,
+      "ci_high": 156,
+      "trend": "stable"
+    },
+    {
+      "county": "Mississippi, MO",
+      "fips": "29133",
+      "state": "Missouri",
+      "predicted": 183,
+      "ci_low": 170,
+      "ci_high": 195,
+      "trend": "stable"
+    },
+    {
+      "county": "Moniteau, MO",
+      "fips": "29135",
+      "state": "Missouri",
+      "predicted": 145,
+      "ci_low": 132,
+      "ci_high": 157,
+      "trend": "stable"
+    },
+    {
+      "county": "Monroe, MO",
+      "fips": "29137",
+      "state": "Missouri",
+      "predicted": 154,
+      "ci_low": 141,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "New Madrid, MO",
+      "fips": "29143",
+      "state": "Missouri",
+      "predicted": 180,
+      "ci_low": 168,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Pemiscot, MO",
+      "fips": "29155",
+      "state": "Missouri",
+      "predicted": 179,
+      "ci_low": 166,
+      "ci_high": 191,
+      "trend": "stable"
+    },
+    {
+      "county": "Perry, MO",
+      "fips": "29157",
+      "state": "Missouri",
+      "predicted": 159,
+      "ci_low": 147,
+      "ci_high": 172,
+      "trend": "stable"
+    },
+    {
+      "county": "Pike, MO",
+      "fips": "29163",
+      "state": "Missouri",
+      "predicted": 154,
+      "ci_low": 142,
+      "ci_high": 167,
+      "trend": "stable"
+    },
+    {
+      "county": "Platte, MO",
+      "fips": "29165",
+      "state": "Missouri",
+      "predicted": 168,
+      "ci_low": 156,
+      "ci_high": 181,
+      "trend": "stable"
+    },
+    {
+      "county": "Putnam, MO",
+      "fips": "29171",
+      "state": "Missouri",
+      "predicted": 145,
+      "ci_low": 133,
+      "ci_high": 158,
+      "trend": "stable"
+    },
+    {
+      "county": "Ralls, MO",
+      "fips": "29173",
+      "state": "Missouri",
+      "predicted": 164,
+      "ci_low": 152,
+      "ci_high": 177,
+      "trend": "stable"
+    },
+    {
+      "county": "Randolph, MO",
+      "fips": "29175",
+      "state": "Missouri",
+      "predicted": 160,
+      "ci_low": 148,
+      "ci_high": 173,
+      "trend": "stable"
+    },
+    {
+      "county": "St Charles, MO",
+      "fips": "29183",
+      "state": "Missouri",
+      "predicted": 169,
+      "ci_low": 156,
+      "ci_high": 181,
+      "trend": "stable"
+    },
+    {
+      "county": "St Clair, MO",
+      "fips": "29185",
+      "state": "Missouri",
+      "predicted": 138,
+      "ci_low": 125,
+      "ci_high": 150,
+      "trend": "stable"
+    },
+    {
+      "county": "Saline, MO",
+      "fips": "29195",
+      "state": "Missouri",
+      "predicted": 176,
+      "ci_low": 163,
+      "ci_high": 188,
+      "trend": "stable"
+    },
+    {
+      "county": "Scotland, MO",
+      "fips": "29199",
+      "state": "Missouri",
+      "predicted": 153,
+      "ci_low": 140,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "Scott, MO",
+      "fips": "29201",
+      "state": "Missouri",
+      "predicted": 180,
+      "ci_low": 168,
+      "ci_high": 192,
+      "trend": "stable"
+    },
+    {
+      "county": "Shelby, MO",
+      "fips": "29205",
+      "state": "Missouri",
+      "predicted": 162,
+      "ci_low": 150,
+      "ci_high": 175,
+      "trend": "stable"
+    },
+    {
+      "county": "Stoddard, MO",
+      "fips": "29207",
+      "state": "Missouri",
+      "predicted": 176,
+      "ci_low": 164,
+      "ci_high": 189,
+      "trend": "stable"
+    },
+    {
+      "county": "Sullivan, MO",
+      "fips": "29211",
+      "state": "Missouri",
+      "predicted": 146,
+      "ci_low": 134,
+      "ci_high": 159,
+      "trend": "stable"
+    },
+    {
+      "county": "Warren, MO",
+      "fips": "29219",
+      "state": "Missouri",
+      "predicted": 164,
+      "ci_low": 152,
+      "ci_high": 177,
+      "trend": "up"
+    },
+    {
+      "county": "Worth, MO",
+      "fips": "29227",
+      "state": "Missouri",
+      "predicted": 152,
+      "ci_low": 140,
+      "ci_high": 164,
+      "trend": "stable"
+    },
+    {
+      "county": "Adams, NE",
+      "fips": "31001",
+      "state": "Nebraska",
+      "predicted": 205,
+      "ci_low": 192,
+      "ci_high": 217,
+      "trend": "stable"
+    },
+    {
+      "county": "Box Butte, NE",
+      "fips": "31013",
+      "state": "Nebraska",
+      "predicted": 165,
+      "ci_low": 152,
+      "ci_high": 177,
+      "trend": "up"
+    },
+    {
+      "county": "Boyd, NE",
+      "fips": "31015",
+      "state": "Nebraska",
+      "predicted": 149,
+      "ci_low": 136,
+      "ci_high": 162,
+      "trend": "stable"
+    },
+    {
+      "county": "Brown, NE",
+      "fips": "31017",
+      "state": "Nebraska",
+      "predicted": 206,
+      "ci_low": 194,
+      "ci_high": 218,
+      "trend": "stable"
+    },
+    {
+      "county": "Buffalo, NE",
+      "fips": "31019",
+      "state": "Nebraska",
+      "predicted": 196,
+      "ci_low": 184,
+      "ci_high": 209,
+      "trend": "stable"
+    },
+    {
+      "county": "Burt, NE",
+      "fips": "31021",
+      "state": "Nebraska",
+      "predicted": 185,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Butler, NE",
+      "fips": "31023",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Cass, NE",
+      "fips": "31025",
+      "state": "Nebraska",
+      "predicted": 180,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "stable"
+    },
+    {
+      "county": "Cedar, NE",
+      "fips": "31027",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "up"
+    },
+    {
+      "county": "Chase, NE",
+      "fips": "31029",
+      "state": "Nebraska",
+      "predicted": 172,
+      "ci_low": 160,
+      "ci_high": 185,
+      "trend": "up"
+    },
+    {
+      "county": "Cheyenne, NE",
+      "fips": "31033",
+      "state": "Nebraska",
+      "predicted": 136,
+      "ci_low": 123,
+      "ci_high": 148,
+      "trend": "up"
+    },
+    {
+      "county": "Clay, NE",
+      "fips": "31035",
+      "state": "Nebraska",
+      "predicted": 191,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Colfax, NE",
+      "fips": "31037",
+      "state": "Nebraska",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Cuming, NE",
+      "fips": "31039",
+      "state": "Nebraska",
+      "predicted": 190,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Custer, NE",
+      "fips": "31041",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Dawson, NE",
+      "fips": "31047",
+      "state": "Nebraska",
+      "predicted": 200,
+      "ci_low": 188,
+      "ci_high": 213,
+      "trend": "stable"
+    },
+    {
+      "county": "Deuel, NE",
+      "fips": "31049",
+      "state": "Nebraska",
+      "predicted": 132,
+      "ci_low": 120,
+      "ci_high": 145,
+      "trend": "up"
+    },
+    {
+      "county": "Douglas, NE",
+      "fips": "31055",
+      "state": "Nebraska",
+      "predicted": 181,
+      "ci_low": 168,
+      "ci_high": 193,
+      "trend": "stable"
+    },
+    {
+      "county": "Dundy, NE",
+      "fips": "31057",
+      "state": "Nebraska",
+      "predicted": 156,
+      "ci_low": 144,
+      "ci_high": 169,
+      "trend": "stable"
+    },
+    {
+      "county": "Fillmore, NE",
+      "fips": "31059",
+      "state": "Nebraska",
+      "predicted": 195,
+      "ci_low": 183,
+      "ci_high": 208,
+      "trend": "stable"
+    },
+    {
+      "county": "Franklin, NE",
+      "fips": "31061",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "up"
+    },
+    {
+      "county": "Frontier, NE",
+      "fips": "31063",
+      "state": "Nebraska",
+      "predicted": 155,
+      "ci_low": 142,
+      "ci_high": 167,
+      "trend": "stable"
+    },
+    {
+      "county": "Furnas, NE",
+      "fips": "31065",
+      "state": "Nebraska",
+      "predicted": 147,
+      "ci_low": 134,
+      "ci_high": 159,
+      "trend": "stable"
+    },
+    {
+      "county": "Garfield, NE",
+      "fips": "31071",
+      "state": "Nebraska",
+      "predicted": 184,
+      "ci_low": 171,
+      "ci_high": 196,
+      "trend": "stable"
+    },
+    {
+      "county": "Hall, NE",
+      "fips": "31079",
+      "state": "Nebraska",
+      "predicted": 199,
+      "ci_low": 186,
+      "ci_high": 211,
+      "trend": "stable"
+    },
+    {
+      "county": "Hamilton, NE",
+      "fips": "31081",
+      "state": "Nebraska",
+      "predicted": 207,
+      "ci_low": 194,
+      "ci_high": 220,
+      "trend": "stable"
+    },
+    {
+      "county": "Harlan, NE",
+      "fips": "31083",
+      "state": "Nebraska",
+      "predicted": 183,
+      "ci_low": 170,
+      "ci_high": 196,
+      "trend": "up"
+    },
+    {
+      "county": "Hayes, NE",
+      "fips": "31085",
+      "state": "Nebraska",
+      "predicted": 156,
+      "ci_low": 143,
+      "ci_high": 168,
+      "trend": "stable"
+    },
+    {
+      "county": "Hitchcock, NE",
+      "fips": "31087",
+      "state": "Nebraska",
+      "predicted": 129,
+      "ci_low": 117,
+      "ci_high": 142,
+      "trend": "up"
+    },
+    {
+      "county": "Howard, NE",
+      "fips": "31093",
+      "state": "Nebraska",
+      "predicted": 181,
+      "ci_low": 169,
+      "ci_high": 194,
+      "trend": "stable"
+    },
+    {
+      "county": "Jefferson, NE",
+      "fips": "31095",
+      "state": "Nebraska",
+      "predicted": 176,
+      "ci_low": 163,
+      "ci_high": 188,
+      "trend": "up"
+    },
+    {
+      "county": "Johnson, NE",
+      "fips": "31097",
+      "state": "Nebraska",
+      "predicted": 155,
+      "ci_low": 142,
+      "ci_high": 167,
+      "trend": "stable"
+    },
+    {
+      "county": "Kearney, NE",
+      "fips": "31099",
+      "state": "Nebraska",
+      "predicted": 205,
+      "ci_low": 192,
+      "ci_high": 217,
+      "trend": "up"
+    },
+    {
+      "county": "Keith, NE",
+      "fips": "31101",
+      "state": "Nebraska",
+      "predicted": 168,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "stable"
+    },
+    {
+      "county": "Keya Paha, NE",
+      "fips": "31103",
+      "state": "Nebraska",
+      "predicted": 174,
+      "ci_low": 161,
+      "ci_high": 186,
+      "trend": "up"
+    },
+    {
+      "county": "Knox, NE",
+      "fips": "31107",
+      "state": "Nebraska",
+      "predicted": 175,
+      "ci_low": 162,
+      "ci_high": 188,
+      "trend": "stable"
+    },
+    {
+      "county": "Lancaster, NE",
+      "fips": "31109",
+      "state": "Nebraska",
+      "predicted": 165,
+      "ci_low": 152,
+      "ci_high": 177,
+      "trend": "up"
+    },
+    {
+      "county": "Lincoln, NE",
+      "fips": "31111",
+      "state": "Nebraska",
+      "predicted": 182,
+      "ci_low": 170,
+      "ci_high": 195,
+      "trend": "stable"
+    },
+    {
+      "county": "Logan, NE",
+      "fips": "31113",
+      "state": "Nebraska",
+      "predicted": 182,
+      "ci_low": 169,
+      "ci_high": 194,
+      "trend": "stable"
+    },
+    {
+      "county": "Morrill, NE",
+      "fips": "31123",
+      "state": "Nebraska",
+      "predicted": 173,
+      "ci_low": 160,
+      "ci_high": 186,
+      "trend": "up"
+    },
+    {
+      "county": "Nuckolls, NE",
+      "fips": "31129",
+      "state": "Nebraska",
+      "predicted": 176,
+      "ci_low": 164,
+      "ci_high": 189,
+      "trend": "stable"
+    },
+    {
+      "county": "Pawnee, NE",
+      "fips": "31133",
+      "state": "Nebraska",
+      "predicted": 153,
+      "ci_low": 140,
+      "ci_high": 165,
+      "trend": "stable"
+    },
+    {
+      "county": "Phelps, NE",
+      "fips": "31137",
+      "state": "Nebraska",
+      "predicted": 210,
+      "ci_low": 198,
+      "ci_high": 222,
+      "trend": "up"
+    },
+    {
+      "county": "Pierce, NE",
+      "fips": "31139",
+      "state": "Nebraska",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 200,
+      "trend": "stable"
+    },
+    {
+      "county": "Platte, NE",
+      "fips": "31141",
+      "state": "Nebraska",
+      "predicted": 194,
+      "ci_low": 182,
+      "ci_high": 207,
+      "trend": "stable"
+    },
+    {
+      "county": "Polk, NE",
+      "fips": "31143",
+      "state": "Nebraska",
+      "predicted": 194,
+      "ci_low": 182,
+      "ci_high": 207,
+      "trend": "stable"
+    },
+    {
+      "county": "Red Willow, NE",
+      "fips": "31145",
+      "state": "Nebraska",
+      "predicted": 136,
+      "ci_low": 124,
+      "ci_high": 149,
+      "trend": "stable"
+    },
+    {
+      "county": "Saline, NE",
+      "fips": "31151",
+      "state": "Nebraska",
+      "predicted": 176,
+      "ci_low": 164,
+      "ci_high": 189,
+      "trend": "up"
+    },
+    {
+      "county": "Sarpy, NE",
+      "fips": "31153",
+      "state": "Nebraska",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Scotts Bluff, NE",
+      "fips": "31157",
+      "state": "Nebraska",
+      "predicted": 171,
+      "ci_low": 158,
+      "ci_high": 183,
+      "trend": "up"
+    },
+    {
+      "county": "Sheridan, NE",
+      "fips": "31161",
+      "state": "Nebraska",
+      "predicted": 168,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "up"
+    },
+    {
+      "county": "Sherman, NE",
+      "fips": "31163",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Stanton, NE",
+      "fips": "31167",
+      "state": "Nebraska",
+      "predicted": 182,
+      "ci_low": 170,
+      "ci_high": 195,
+      "trend": "stable"
+    },
+    {
+      "county": "Thayer, NE",
+      "fips": "31169",
+      "state": "Nebraska",
+      "predicted": 189,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "up"
+    },
+    {
+      "county": "Valley, NE",
+      "fips": "31175",
+      "state": "Nebraska",
+      "predicted": 188,
+      "ci_low": 176,
+      "ci_high": 201,
+      "trend": "stable"
+    },
+    {
+      "county": "Washington, NE",
+      "fips": "31177",
+      "state": "Nebraska",
+      "predicted": 178,
+      "ci_low": 166,
+      "ci_high": 191,
+      "trend": "up"
+    },
+    {
+      "county": "Wayne, NE",
+      "fips": "31179",
+      "state": "Nebraska",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Webster, NE",
+      "fips": "31181",
+      "state": "Nebraska",
+      "predicted": 169,
+      "ci_low": 156,
+      "ci_high": 181,
+      "trend": "stable"
+    },
+    {
+      "county": "Wheeler, NE",
+      "fips": "31183",
+      "state": "Nebraska",
+      "predicted": 189,
+      "ci_low": 177,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "York, NE",
+      "fips": "31185",
+      "state": "Nebraska",
+      "predicted": 204,
+      "ci_low": 192,
+      "ci_high": 216,
+      "trend": "stable"
+    },
+    {
+      "county": "Adams, WI",
+      "fips": "55001",
+      "state": "Wisconsin",
+      "predicted": 142,
+      "ci_low": 129,
+      "ci_high": 154,
+      "trend": "up"
+    },
+    {
+      "county": "Barron, WI",
+      "fips": "55005",
+      "state": "Wisconsin",
+      "predicted": 152,
+      "ci_low": 140,
+      "ci_high": 165,
+      "trend": "stable"
+    },
+    {
+      "county": "Buffalo, WI",
+      "fips": "55011",
+      "state": "Wisconsin",
+      "predicted": 170,
+      "ci_low": 158,
+      "ci_high": 183,
+      "trend": "up"
+    },
+    {
+      "county": "Burnett, WI",
+      "fips": "55013",
+      "state": "Wisconsin",
+      "predicted": 133,
+      "ci_low": 121,
+      "ci_high": 146,
+      "trend": "up"
+    },
+    {
+      "county": "Calumet, WI",
+      "fips": "55015",
+      "state": "Wisconsin",
+      "predicted": 170,
+      "ci_low": 158,
+      "ci_high": 182,
+      "trend": "up"
+    },
+    {
+      "county": "Chippewa, WI",
+      "fips": "55017",
+      "state": "Wisconsin",
+      "predicted": 156,
+      "ci_low": 144,
+      "ci_high": 169,
+      "trend": "stable"
+    },
+    {
+      "county": "Clark, WI",
+      "fips": "55019",
+      "state": "Wisconsin",
+      "predicted": 143,
+      "ci_low": 130,
+      "ci_high": 155,
+      "trend": "up"
+    },
+    {
+      "county": "Columbia, WI",
+      "fips": "55021",
+      "state": "Wisconsin",
+      "predicted": 186,
+      "ci_low": 174,
+      "ci_high": 199,
+      "trend": "stable"
+    },
+    {
+      "county": "Crawford, WI",
+      "fips": "55023",
+      "state": "Wisconsin",
+      "predicted": 172,
+      "ci_low": 160,
+      "ci_high": 185,
+      "trend": "stable"
+    },
+    {
+      "county": "Dane, WI",
+      "fips": "55025",
+      "state": "Wisconsin",
+      "predicted": 189,
+      "ci_low": 176,
+      "ci_high": 202,
+      "trend": "stable"
+    },
+    {
+      "county": "Dodge, WI",
+      "fips": "55027",
+      "state": "Wisconsin",
+      "predicted": 185,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "up"
+    },
+    {
+      "county": "Door, WI",
+      "fips": "55029",
+      "state": "Wisconsin",
+      "predicted": 140,
+      "ci_low": 128,
+      "ci_high": 153,
+      "trend": "up"
+    },
+    {
+      "county": "Dunn, WI",
+      "fips": "55033",
+      "state": "Wisconsin",
+      "predicted": 172,
+      "ci_low": 160,
+      "ci_high": 185,
+      "trend": "up"
+    },
+    {
+      "county": "Fond Du Lac, WI",
+      "fips": "55039",
+      "state": "Wisconsin",
+      "predicted": 185,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "up"
+    },
+    {
+      "county": "Grant, WI",
+      "fips": "55043",
+      "state": "Wisconsin",
+      "predicted": 197,
+      "ci_low": 185,
+      "ci_high": 210,
+      "trend": "stable"
+    },
+    {
+      "county": "Green, WI",
+      "fips": "55045",
+      "state": "Wisconsin",
+      "predicted": 190,
+      "ci_low": 178,
+      "ci_high": 203,
+      "trend": "up"
+    },
+    {
+      "county": "Green Lake, WI",
+      "fips": "55047",
+      "state": "Wisconsin",
+      "predicted": 179,
+      "ci_low": 166,
+      "ci_high": 191,
+      "trend": "up"
+    },
+    {
+      "county": "Iowa, WI",
+      "fips": "55049",
+      "state": "Wisconsin",
+      "predicted": 191,
+      "ci_low": 179,
+      "ci_high": 204,
+      "trend": "stable"
+    },
+    {
+      "county": "Jackson, WI",
+      "fips": "55053",
+      "state": "Wisconsin",
+      "predicted": 168,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "stable"
+    },
+    {
+      "county": "Jefferson, WI",
+      "fips": "55055",
+      "state": "Wisconsin",
+      "predicted": 181,
+      "ci_low": 169,
+      "ci_high": 194,
+      "trend": "up"
+    },
+    {
+      "county": "Juneau, WI",
+      "fips": "55057",
+      "state": "Wisconsin",
+      "predicted": 157,
+      "ci_low": 144,
+      "ci_high": 169,
+      "trend": "up"
+    },
+    {
+      "county": "Kenosha, WI",
+      "fips": "55059",
+      "state": "Wisconsin",
+      "predicted": 176,
+      "ci_low": 163,
+      "ci_high": 188,
+      "trend": "stable"
+    },
+    {
+      "county": "Kewaunee, WI",
+      "fips": "55061",
+      "state": "Wisconsin",
+      "predicted": 154,
+      "ci_low": 142,
+      "ci_high": 166,
+      "trend": "stable"
+    },
+    {
+      "county": "La Crosse, WI",
+      "fips": "55063",
+      "state": "Wisconsin",
+      "predicted": 179,
+      "ci_low": 167,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Lafayette, WI",
+      "fips": "55065",
+      "state": "Wisconsin",
+      "predicted": 197,
+      "ci_low": 184,
+      "ci_high": 209,
+      "trend": "stable"
+    },
+    {
+      "county": "Langlade, WI",
+      "fips": "55067",
+      "state": "Wisconsin",
+      "predicted": 133,
+      "ci_low": 120,
+      "ci_high": 145,
+      "trend": "up"
+    },
+    {
+      "county": "Lincoln, WI",
+      "fips": "55069",
+      "state": "Wisconsin",
+      "predicted": 138,
+      "ci_low": 125,
+      "ci_high": 150,
+      "trend": "up"
+    },
+    {
+      "county": "Manitowoc, WI",
+      "fips": "55071",
+      "state": "Wisconsin",
+      "predicted": 167,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "up"
+    },
+    {
+      "county": "Marathon, WI",
+      "fips": "55073",
+      "state": "Wisconsin",
+      "predicted": 141,
+      "ci_low": 128,
+      "ci_high": 153,
+      "trend": "stable"
+    },
+    {
+      "county": "Marinette, WI",
+      "fips": "55075",
+      "state": "Wisconsin",
+      "predicted": 136,
+      "ci_low": 124,
+      "ci_high": 149,
+      "trend": "stable"
+    },
+    {
+      "county": "Marquette, WI",
+      "fips": "55077",
+      "state": "Wisconsin",
+      "predicted": 144,
+      "ci_low": 131,
+      "ci_high": 156,
+      "trend": "up"
+    },
+    {
+      "county": "Monroe, WI",
+      "fips": "55081",
+      "state": "Wisconsin",
+      "predicted": 161,
+      "ci_low": 148,
+      "ci_high": 173,
+      "trend": "stable"
+    },
+    {
+      "county": "Oconto, WI",
+      "fips": "55083",
+      "state": "Wisconsin",
+      "predicted": 145,
+      "ci_low": 133,
+      "ci_high": 158,
+      "trend": "stable"
+    },
+    {
+      "county": "Outagamie, WI",
+      "fips": "55087",
+      "state": "Wisconsin",
+      "predicted": 167,
+      "ci_low": 154,
+      "ci_high": 179,
+      "trend": "up"
+    },
+    {
+      "county": "Ozaukee, WI",
+      "fips": "55089",
+      "state": "Wisconsin",
+      "predicted": 170,
+      "ci_low": 158,
+      "ci_high": 183,
+      "trend": "up"
+    },
+    {
+      "county": "Pepin, WI",
+      "fips": "55091",
+      "state": "Wisconsin",
+      "predicted": 179,
+      "ci_low": 166,
+      "ci_high": 192,
+      "trend": "up"
+    },
+    {
+      "county": "Pierce, WI",
+      "fips": "55093",
+      "state": "Wisconsin",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "up"
+    },
+    {
+      "county": "Polk, WI",
+      "fips": "55095",
+      "state": "Wisconsin",
+      "predicted": 155,
+      "ci_low": 142,
+      "ci_high": 168,
+      "trend": "stable"
+    },
+    {
+      "county": "Portage, WI",
+      "fips": "55097",
+      "state": "Wisconsin",
+      "predicted": 166,
+      "ci_low": 154,
+      "ci_high": 178,
+      "trend": "up"
+    },
+    {
+      "county": "Price, WI",
+      "fips": "55099",
+      "state": "Wisconsin",
+      "predicted": 122,
+      "ci_low": 110,
+      "ci_high": 135,
+      "trend": "stable"
+    },
+    {
+      "county": "Racine, WI",
+      "fips": "55101",
+      "state": "Wisconsin",
+      "predicted": 177,
+      "ci_low": 165,
+      "ci_high": 190,
+      "trend": "stable"
+    },
+    {
+      "county": "Richland, WI",
+      "fips": "55103",
+      "state": "Wisconsin",
+      "predicted": 166,
+      "ci_low": 153,
+      "ci_high": 178,
+      "trend": "stable"
+    },
+    {
+      "county": "Rock, WI",
+      "fips": "55105",
+      "state": "Wisconsin",
+      "predicted": 190,
+      "ci_low": 178,
+      "ci_high": 203,
+      "trend": "up"
+    },
+    {
+      "county": "Rusk, WI",
+      "fips": "55107",
+      "state": "Wisconsin",
+      "predicted": 129,
+      "ci_low": 117,
+      "ci_high": 142,
+      "trend": "stable"
+    },
+    {
+      "county": "St Croix, WI",
+      "fips": "55109",
+      "state": "Wisconsin",
+      "predicted": 174,
+      "ci_low": 161,
+      "ci_high": 186,
+      "trend": "stable"
+    },
+    {
+      "county": "Sauk, WI",
+      "fips": "55111",
+      "state": "Wisconsin",
+      "predicted": 170,
+      "ci_low": 158,
+      "ci_high": 183,
+      "trend": "up"
+    },
+    {
+      "county": "Sawyer, WI",
+      "fips": "55113",
+      "state": "Wisconsin",
+      "predicted": 137,
+      "ci_low": 124,
+      "ci_high": 149,
+      "trend": "stable"
+    },
+    {
+      "county": "Sheboygan, WI",
+      "fips": "55117",
+      "state": "Wisconsin",
+      "predicted": 166,
+      "ci_low": 153,
+      "ci_high": 178,
+      "trend": "up"
+    },
+    {
+      "county": "Taylor, WI",
+      "fips": "55119",
+      "state": "Wisconsin",
+      "predicted": 139,
+      "ci_low": 126,
+      "ci_high": 151,
+      "trend": "up"
+    },
+    {
+      "county": "Trempealeau, WI",
+      "fips": "55121",
+      "state": "Wisconsin",
+      "predicted": 172,
+      "ci_low": 159,
+      "ci_high": 184,
+      "trend": "up"
+    },
+    {
+      "county": "Vernon, WI",
+      "fips": "55123",
+      "state": "Wisconsin",
+      "predicted": 167,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "stable"
+    },
+    {
+      "county": "Walworth, WI",
+      "fips": "55127",
+      "state": "Wisconsin",
+      "predicted": 186,
+      "ci_low": 173,
+      "ci_high": 198,
+      "trend": "stable"
+    },
+    {
+      "county": "Washburn, WI",
+      "fips": "55129",
+      "state": "Wisconsin",
+      "predicted": 144,
+      "ci_low": 132,
+      "ci_high": 156,
+      "trend": "stable"
+    },
+    {
+      "county": "Washington, WI",
+      "fips": "55131",
+      "state": "Wisconsin",
+      "predicted": 168,
+      "ci_low": 155,
+      "ci_high": 180,
+      "trend": "up"
+    },
+    {
+      "county": "Waukesha, WI",
+      "fips": "55133",
+      "state": "Wisconsin",
+      "predicted": 177,
+      "ci_low": 165,
+      "ci_high": 190,
+      "trend": "stable"
+    },
+    {
+      "county": "Waupaca, WI",
+      "fips": "55135",
+      "state": "Wisconsin",
+      "predicted": 159,
+      "ci_low": 146,
+      "ci_high": 172,
+      "trend": "up"
+    },
+    {
+      "county": "Waushara, WI",
+      "fips": "55137",
+      "state": "Wisconsin",
+      "predicted": 172,
+      "ci_low": 160,
+      "ci_high": 185,
+      "trend": "up"
+    },
+    {
+      "county": "Winnebago, WI",
+      "fips": "55139",
+      "state": "Wisconsin",
+      "predicted": 158,
+      "ci_low": 145,
+      "ci_high": 170,
+      "trend": "up"
+    },
+    {
+      "county": "Wood, WI",
+      "fips": "55141",
+      "state": "Wisconsin",
+      "predicted": 154,
+      "ci_low": 141,
+      "ci_high": 166,
+      "trend": "up"
+    }
+  ],
+  "coneData": {
+    "Iowa": [
+      {
+        "stage": "Aug 1",
+        "predicted": 183,
+        "upper": 205,
+        "lower": 167,
+        "analog_range": [
+          160,
+          210
+        ]
+      },
+      {
+        "stage": "Sep 1",
+        "predicted": 185,
+        "upper": 202,
+        "lower": 173,
+        "analog_range": [
+          168,
+          206
+        ]
+      },
+      {
+        "stage": "Oct 1",
+        "predicted": 185,
+        "upper": 199,
+        "lower": 171,
+        "analog_range": [
+          172,
+          202
+        ]
+      },
+      {
+        "stage": "Final",
+        "predicted": 183,
+        "upper": 202,
+        "lower": 173,
+        "analog_range": [
+          173,
+          202
+        ]
+      }
+    ],
+    "Colorado": [
+      {
+        "stage": "Aug 1",
+        "predicted": 163,
+        "upper": 175,
+        "lower": 121,
+        "analog_range": [
+          115,
+          180
+        ]
+      },
+      {
+        "stage": "Sep 1",
+        "predicted": 163,
+        "upper": 163,
+        "lower": 123,
+        "analog_range": [
+          118,
+          168
+        ]
+      },
+      {
+        "stage": "Oct 1",
+        "predicted": 163,
+        "upper": 163,
+        "lower": 126,
+        "analog_range": [
+          122,
+          166
+        ]
+      },
+      {
+        "stage": "Final",
+        "predicted": 163,
+        "upper": 163,
+        "lower": 124,
+        "analog_range": [
+          124,
+          162
+        ]
+      }
+    ],
+    "Wisconsin": [
+      {
+        "stage": "Aug 1",
+        "predicted": 179,
+        "upper": 180,
+        "lower": 144,
+        "analog_range": [
+          138,
+          185
+        ]
+      },
+      {
+        "stage": "Sep 1",
+        "predicted": 182,
+        "upper": 182,
+        "lower": 144,
+        "analog_range": [
+          140,
+          186
+        ]
+      },
+      {
+        "stage": "Oct 1",
+        "predicted": 181,
+        "upper": 181,
+        "lower": 148,
+        "analog_range": [
+          144,
+          184
+        ]
+      },
+      {
+        "stage": "Final",
+        "predicted": 178,
+        "upper": 180,
+        "lower": 148,
+        "analog_range": [
+          148,
+          180
+        ]
+      }
+    ],
+    "Missouri": [
+      {
+        "stage": "Aug 1",
+        "predicted": 174,
+        "upper": 180,
+        "lower": 148,
+        "analog_range": [
+          143,
+          185
+        ]
+      },
+      {
+        "stage": "Sep 1",
+        "predicted": 179,
+        "upper": 179,
+        "lower": 148,
+        "analog_range": [
+          144,
+          182
+        ]
+      },
+      {
+        "stage": "Oct 1",
+        "predicted": 175,
+        "upper": 175,
+        "lower": 113,
+        "analog_range": [
+          108,
+          178
+        ]
+      },
+      {
+        "stage": "Final",
+        "predicted": 173,
+        "upper": 173,
+        "lower": 113,
+        "analog_range": [
+          113,
+          176
+        ]
+      }
+    ],
+    "Nebraska": [
+      {
+        "stage": "Aug 1",
+        "predicted": 174,
+        "upper": 183,
+        "lower": 162,
+        "analog_range": [
+          157,
+          188
+        ]
+      },
+      {
+        "stage": "Sep 1",
+        "predicted": 173,
+        "upper": 192,
+        "lower": 159,
+        "analog_range": [
+          154,
+          196
+        ]
+      },
+      {
+        "stage": "Oct 1",
+        "predicted": 176,
+        "upper": 185,
+        "lower": 171,
+        "analog_range": [
+          167,
+          188
+        ]
+      },
+      {
+        "stage": "Final",
+        "predicted": 172,
+        "upper": 184,
+        "lower": 159,
+        "analog_range": [
+          155,
+          188
+        ]
+      }
+    ]
+  },
+  "analogYears": {
+    "Iowa": [
+      2020,
+      2023,
+      2016,
+      2007,
+      2004
+    ],
+    "Colorado": [
+      2024,
+      2018,
+      2021,
+      2023,
+      2012
+    ],
+    "Wisconsin": [
+      2018,
+      2004,
+      2021,
+      2015,
+      2016
+    ],
+    "Missouri": [
+      2011,
+      2007,
+      2005,
+      2016,
+      2004
+    ],
+    "Nebraska": [
+      2015,
+      2016,
+      2004,
+      2017,
+      2005
+    ]
+  },
+  "yieldTrends": [
+    {
+      "year": 2015,
+      "Iowa": 191,
+      "Nebraska": 176,
+      "Wisconsin": 167,
+      "Missouri": 148,
+      "Colorado": 178
+    },
+    {
+      "year": 2016,
+      "Iowa": 196,
+      "Nebraska": 183,
+      "Wisconsin": 172,
+      "Missouri": 161,
+      "Colorado": 181
+    },
+    {
+      "year": 2017,
+      "Iowa": 199,
+      "Nebraska": 181,
+      "Wisconsin": 170,
+      "Missouri": 163,
+      "Colorado": 183
+    },
+    {
+      "year": 2018,
+      "Iowa": 196,
+      "Nebraska": 175,
+      "Wisconsin": 168,
+      "Missouri": 158,
+      "Colorado": 180
+    },
+    {
+      "year": 2019,
+      "Iowa": 167,
+      "Nebraska": 162,
+      "Wisconsin": 151,
+      "Missouri": 139,
+      "Colorado": 165
+    },
+    {
+      "year": 2020,
+      "Iowa": 197,
+      "Nebraska": 182,
+      "Wisconsin": 174,
+      "Missouri": 165,
+      "Colorado": 182
+    },
+    {
+      "year": 2021,
+      "Iowa": 177,
+      "Nebraska": 162,
+      "Wisconsin": 158,
+      "Missouri": 144,
+      "Colorado": 171
+    },
+    {
+      "year": 2022,
+      "Iowa": 202,
+      "Nebraska": 185,
+      "Wisconsin": 177,
+      "Missouri": 163,
+      "Colorado": 188
+    },
+    {
+      "year": 2023,
+      "Iowa": 200,
+      "Nebraska": 183,
+      "Wisconsin": 175,
+      "Missouri": 161,
+      "Colorado": 185
+    },
+    {
+      "year": 2024,
+      "Iowa": 211,
+      "Nebraska": 184,
+      "Wisconsin": 162,
+      "Missouri": 175,
+      "Colorado": 131
+    },
+    {
+      "year": 2025,
+      "Colorado": 146,
+      "Iowa": 184,
+      "Missouri": 158,
+      "Nebraska": 178,
+      "Wisconsin": 164,
+      "isForecast": true
+    }
+  ],
+  "stateForecasts2025": {
+    "Colorado": {
+      "state": "Colorado",
+      "predicted": 154,
+      "usda2024": 131,
+      "delta": 23,
+      "countyCount": 18,
+      "topCounty": "Delta, CO",
+      "topYield": 206,
+      "risingCounties": 13,
+      "knnForecast": 163,
+      "xgbForecast": 146
+    },
+    "Iowa": {
+      "state": "Iowa",
+      "predicted": 184,
+      "usda2024": 211,
+      "delta": -27,
+      "countyCount": 73,
+      "topCounty": "Ida, IA",
+      "topYield": 197,
+      "risingCounties": 3,
+      "knnForecast": 183,
+      "xgbForecast": 184
+    },
+    "Missouri": {
+      "state": "Missouri",
+      "predicted": 166,
+      "usda2024": 175,
+      "delta": -9,
+      "countyCount": 53,
+      "topCounty": "Atchison, MO",
+      "topYield": 183,
+      "risingCounties": 8,
+      "knnForecast": 173,
+      "xgbForecast": 158
+    },
+    "Nebraska": {
+      "state": "Nebraska",
+      "predicted": 175,
+      "usda2024": 184,
+      "delta": -9,
+      "countyCount": 60,
+      "topCounty": "Phelps, NE",
+      "topYield": 210,
+      "risingCounties": 19,
+      "knnForecast": 172,
+      "xgbForecast": 178
+    },
+    "Wisconsin": {
+      "state": "Wisconsin",
+      "predicted": 171,
+      "usda2024": 162,
+      "delta": 9,
+      "countyCount": 59,
+      "topCounty": "Grant, WI",
+      "topYield": 197,
+      "risingCounties": 33,
+      "knnForecast": 178,
+      "xgbForecast": 164
+    }
+  },
+  "usda2024": {
+    "Iowa": 211,
+    "Nebraska": 184,
+    "Wisconsin": 162,
+    "Missouri": 175,
+    "Colorado": 131
+  },
+  "stageValidation": [
+    {
+      "stage": "Aug 1",
+      "r2": 0.739,
+      "mae": 9.4,
+      "rmse": 12.5,
+      "mape": 6.4
+    },
+    {
+      "stage": "Sep 1",
+      "r2": 0.725,
+      "mae": 9.6,
+      "rmse": 12.8,
+      "mape": 6.4
+    },
+    {
+      "stage": "Oct 1",
+      "r2": 0.751,
+      "mae": 8.9,
+      "rmse": 12.2,
+      "mape": 6.0
+    },
+    {
+      "stage": "End of Season",
+      "r2": 0.743,
+      "mae": 9.1,
+      "rmse": 12.4,
+      "mape": 6.2
+    }
+  ]
+}

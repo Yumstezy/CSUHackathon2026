@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="LIVE_SITE_URL"><b>Live dashboard</b></a> &nbsp;·&nbsp;
+  <a href="https://corn-yield-app-chi.vercel.app/"><b>Live dashboard</b></a> &nbsp;·&nbsp;
   <a href="https://www.barrie.dev/">barrie.dev</a> &nbsp;·&nbsp;
   <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
   <a href="#results">Results</a>
